@@ -4,14 +4,13 @@
 //
 
 #pragma once
+#include <iostream>
 
 class Account
 {
 public:
-  Account(int sum)
-  : sum {sum}{};
-  Account()
-  : Account(0){};
+  Account(int);
+  void PrintSum();
 private:
   int sum;
 };
