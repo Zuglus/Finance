@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3E8FFD9926D1690000F06F75 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3E8FFD9826D1690000F06F75 /* main.cpp */; };
+		3E8FFDA426D179EB00F06F75 /* Vallet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3E8FFDA226D179EB00F06F75 /* Vallet.cpp */; };
+		3E8FFDA726D17C0200F06F75 /* Account.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3E8FFDA526D17C0200F06F75 /* Account.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		3E8FFD9526D1690000F06F75 /* Finance */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Finance; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E8FFD9826D1690000F06F75 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		3E8FFDA226D179EB00F06F75 /* Vallet.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Vallet.cpp; sourceTree = "<group>"; };
+		3E8FFDA326D179EB00F06F75 /* Vallet.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = Vallet.h; sourceTree = "<group>"; };
+		3E8FFDA526D17C0200F06F75 /* Account.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Account.cpp; sourceTree = "<group>"; };
+		3E8FFDA626D17C0200F06F75 /* Account.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +50,9 @@
 				3E8FFD9726D1690000F06F75 /* Finance */,
 				3E8FFD9626D1690000F06F75 /* Products */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		3E8FFD9626D1690000F06F75 /* Products */ = {
 			isa = PBXGroup;
@@ -57,7 +65,11 @@
 		3E8FFD9726D1690000F06F75 /* Finance */ = {
 			isa = PBXGroup;
 			children = (
+				3E8FFDA226D179EB00F06F75 /* Vallet.cpp */,
+				3E8FFDA326D179EB00F06F75 /* Vallet.h */,
 				3E8FFD9826D1690000F06F75 /* main.cpp */,
+				3E8FFDA526D17C0200F06F75 /* Account.cpp */,
+				3E8FFDA626D17C0200F06F75 /* Account.h */,
 			);
 			path = Finance;
 			sourceTree = "<group>";
@@ -96,7 +108,7 @@
 				};
 			};
 			buildConfigurationList = 3E8FFD9026D1690000F06F75 /* Build configuration list for PBXProject "Finance" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -119,6 +131,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E8FFD9926D1690000F06F75 /* main.cpp in Sources */,
+				3E8FFDA726D17C0200F06F75 /* Account.cpp in Sources */,
+				3E8FFDA426D179EB00F06F75 /* Vallet.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
