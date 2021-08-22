@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E8F5CCA26D2A61D00EAB664 /* Check.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3E8F5CC826D2A61D00EAB664 /* Check.cpp */; };
 		3E8FFD9926D1690000F06F75 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3E8FFD9826D1690000F06F75 /* main.cpp */; };
 		3E8FFDA426D179EB00F06F75 /* Vallet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3E8FFDA226D179EB00F06F75 /* Vallet.cpp */; };
 		3E8FFDA726D17C0200F06F75 /* Account.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3E8FFDA526D17C0200F06F75 /* Account.cpp */; };
@@ -27,6 +28,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3E8F5CC826D2A61D00EAB664 /* Check.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Check.cpp; sourceTree = "<group>"; };
+		3E8F5CC926D2A61D00EAB664 /* Check.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Check.hpp; sourceTree = "<group>"; };
 		3E8FFD9526D1690000F06F75 /* Finance */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Finance; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E8FFD9826D1690000F06F75 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		3E8FFDA226D179EB00F06F75 /* Vallet.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Vallet.cpp; sourceTree = "<group>"; };
@@ -80,6 +83,8 @@
 				3E8FFDA926D214E200F06F75 /* Card.hpp */,
 				3E8FFDAB26D222D700F06F75 /* Count.cpp */,
 				3E8FFDAC26D222D700F06F75 /* Count.hpp */,
+				3E8F5CC826D2A61D00EAB664 /* Check.cpp */,
+				3E8F5CC926D2A61D00EAB664 /* Check.hpp */,
 			);
 			path = Finance;
 			sourceTree = "<group>";
@@ -144,6 +149,7 @@
 				3E8FFDA726D17C0200F06F75 /* Account.cpp in Sources */,
 				3E8FFDA426D179EB00F06F75 /* Vallet.cpp in Sources */,
 				3E8FFDAD26D222D700F06F75 /* Count.cpp in Sources */,
+				3E8F5CCA26D2A61D00EAB664 /* Check.cpp in Sources */,
 				3E8FFDAA26D214E200F06F75 /* Card.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -18,15 +18,6 @@ Vallet::Vallet(int id, int sum)
 Vallet::Vallet()
 : Vallet(1, 0){};
 
-void Vallet::PrintAccounts()
-{
-  for (auto iter = accounts.begin(); iter != accounts.end(); ++iter)
-  {
-    std::cout << "Account: " << iter->first << std::endl;
-    iter->second->PrintSum();
-  }
-}
-
 void Vallet::AddAccount(int id)
 {
   AddAccount(id, 0);
@@ -58,4 +49,35 @@ void Vallet::IncreaseAccount(int id, int sum)
     std::cout << "\nInvalid ID!!!\n";
   else
     result->second->IncreaseSum(sum);
+}
+
+void Vallet::DecreaseAccount(int id, int sum, std::string type)
+{
+  auto result = accounts.find(id);
+  if (result == accounts.end())
+    std::cout << "\nInvalid ID!!!\n";
+  else
+  {
+    result->second->DecreaseSum(sum, type);
+  }
+}
+
+void Vallet::PrintAccount(int id)
+{
+  auto result = accounts.find(id);
+  if (result == accounts.end())
+    std::cout << "\nInvalid ID!!!\n";
+  else
+  {
+    std::cout << "Account: " << id << std::endl;
+    result->second->PrintSum();
+  }
+}
+
+void Vallet::PrintAccounts()
+{
+  for (auto iter = accounts.begin(); iter != accounts.end(); ++iter)
+  {
+    PrintAccount(iter->first);
+  }
 }

@@ -20,5 +20,9 @@ int main(int argc, const char * argv[]) {
   vallet.PrintAccounts();
   vallet.IncreaseAccount(178, 33);
   vallet.PrintAccounts();
+  vallet.PrintAccount(18);
+  vallet3.PrintAccount(253);
+  vallet3.DecreaseAccount(253, 700, "products");
+  vallet3.PrintAccount(253);
     return 0;
 }

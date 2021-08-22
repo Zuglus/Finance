@@ -25,6 +25,9 @@ public:
   // Increase
   void IncreaseAccount(int, int);
   
+  // Decrease
+  void DecreaseAccount(int, int, std::string);
+  
   // Del
   void DeleteAccount(int);
   
