@@ -62,7 +62,12 @@ void Vallet::DecreaseAccount(int id, int sum, std::string type)
   }
 }
 
-void Vallet::PrintAccount(int id)
+void Vallet::DeleteAccount(int id)
+{
+  accounts.erase(id);
+}
+
+void Vallet::Print(int id)
 {
   auto result = accounts.find(id);
   if (result == accounts.end())
@@ -74,10 +79,10 @@ void Vallet::PrintAccount(int id)
   }
 }
 
-void Vallet::PrintAccounts()
+void Vallet::Print()
 {
   for (auto iter = accounts.begin(); iter != accounts.end(); ++iter)
   {
-    PrintAccount(iter->first);
+    Print(iter->first);
   }
 }

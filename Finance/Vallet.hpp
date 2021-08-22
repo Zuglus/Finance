@@ -32,8 +32,8 @@ public:
   void DeleteAccount(int);
   
   // Print
-  void PrintAccount(int);
-  void PrintAccounts();
+  void Print(int);
+  void Print();
   
 private:
   std::map <int, Account*> accounts;
