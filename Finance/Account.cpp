@@ -3,12 +3,12 @@
 //  Finance
 //
 
-#include "Account.h"
+#include "Account.hpp"
 
 Account::Account(int sum)
-: sum {sum}{};
+: sum{sum}{};
 
-void Account::PrintSum()
+void Account::IncreaseSum(int sum)
 {
-  std::cout << sum << std::endl;
+  this->sum += sum;
 }

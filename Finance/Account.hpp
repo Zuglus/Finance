@@ -10,7 +10,8 @@ class Account
 {
 public:
   Account(int);
-  void PrintSum();
-private:
+  virtual void IncreaseSum(int);
+  virtual void PrintSum() = 0;
+protected:
   int sum;
 };
